@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+	Note: Only needed for demo purposes. Delete for production sites.
+-->
+<html>
+	<head>
+		<title>Story by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+		<style>
+			.hidden {
+			  display: none !important;
+			}
+		  </style>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- Banner -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<header>
+								<h1>DataTech Salary Predictions</h1>
+								<p class="major">Exploring salaries across AI, ML, and Data Science roles.</p>
+							</header>
+							<div class="form-div">
+								<form id="predictForm">
+									<div class="fields">
+										<div class="field halfbig">
+											<label for="job_title">Job Title</label>
+											<select name="job_title" id="uiJobTitle">
+												<option value="">- Job title -</option>
+											</select>
+										</div>
+										<div class="field halfsmall">
+											<label for="work_year">Work Year</label>
+											<select name="work_year" id="uiworkyear">
+												<option value="">- Work year -</option>
+											</select>
+										</div>
+										<div class="fieldline">
+											<label for="experience" style="margin-left:1.5rem; margin-right:1.5rem">Experience Level</label>
+											<div class="field third">
+												<input type="radio" id="experience-entry" name="experience" value="EN" />
+												<label for="experience-entry">Entry</label>
+											</div>
+											<div class="field third">
+												<input type="radio" id="experience-middle" name="experience" value="MI"/>
+												<label for="experience-middle">Middle</label>
+											</div>
+											<div class="field third">
+												<input type="radio" id="experience-senior" name="experience" value="SE"/>
+												<label for="experience-senior">Senior</label>
+											</div>
+											<div class="field third">
+												<input type="radio" id="experience-expert" name="experience" value="EX"/>
+												<label for="experience-expert">Expert</label>
+											</div>
+										</div>
+										<div class="fieldline">
+											<label for="employment" style="margin-left:1.5rem; margin-right:1.5rem">Employment Type</label>
+											<div class="field third">
+												<input type="radio" id="employment-ft" name="employment" value="FT" />
+												<label for="employment-ft">Full-time</label>
+											</div>
+											<div class="field third">
+												<input type="radio" id="employment-pt" name="employment" value="PT"/>
+												<label for="employment-pt">Part-time</label>
+											</div>
+											<div class="field third">
+												<input type="radio" id="employment-ct" name="employment" value="CT"/>
+												<label for="employment-ct">Contract</label>
+											</div>
+											<div class="field third">
+												<input type="radio" id="employment-FL" name="employment" value="FL"/>
+												<label for="employment-xp">Freelance</label>
+											</div>
+										</div>
+
+										<div class="fieldline">
+											<label for="remote" style="margin-left:1.5rem; margin-right:1.5rem">Work Arrangement</label>
+											<div class="field third">
+												<input type="radio" id="remote-0" name="remote" value=0/>
+												<label for="remote-0">On-site</label>
+											</div>
+											<div class="field third">
+												<input type="radio" id="remote-50" name="remote" value=50/>
+												<label for="remote-50">Hybrid</label>
+											</div>
+											<div class="field third">
+												<input type="radio" id="remote-100" name="remote" value=100/>
+												<label for="remote-100">Remote</label>
+											</div>
+										</div>
+
+
+										<div class="fieldline">
+											<label for="size" style="margin-left:1.5rem; margin-right:1.5rem">Company Size</label>
+											<div class="field third">
+												<input type="radio" id="size-s" name="size" value="S" />
+												<label for="size-s">Small</label>
+											</div>
+											<div class="field third">
+												<input type="radio" id="size-m" name="size" value="M"/>
+												<label for="size-m">Medium</label>
+											</div>
+											<div class="field third">
+												<input type="radio" id="size-l" name="size" value="L"/>
+												<label for="size-l">Large</label>
+											</div>
+										</div>
+
+										<div class="field third">
+											<label for="company_locations">Company Location</label>
+											<select name="company_locations" id="uicompanylocs" style="margin: 0;">
+												<option value="">- Location -</option>
+											</select>
+										</div>
+
+
+										<div class="field third">
+											<label for="currency">Currency</label>
+											<select name="currency" id="uicurrency" style="margin: 0;">
+												<option value="">- Currency -</option>
+											</select>
+										</div>
+
+										<div class="field third">
+											<label for="empresidence">Employee Residence</label>
+											<select name="empresidence" id="uiempresidence" style="margin: 0;">
+												<option value="">- Residence -</option>
+											</select>
+										</div>
+																
+									</div>
+									<ul class="actions" >
+										<li>
+											<button href="#first" type="submit" name="submit" id="submit" class="button primary smooth-scroll-middle" onclick="onClickedEstimateSalary()" >
+											  Predict
+											</button>
+										  </li> 
+									</ul>
+								</form>
+						</div>
+					</div>
+					
+						<div class="image">
+							<img src="images/w.jpg" alt="" style="object-fit: cover; object-position: 45% center;" />
+						</div>
+					</section>
+
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in hidden" id="first">
+						<div class="content">
+							<h2 class="jobtitle"></h2>
+							<p class="description"></p>
+							<div class="salarytxt"></div>
+						</div>
+						<div class="image jobthumbnail">
+							<img src="images/spotlight01.jpg" alt="" />
+						</div>
+					</section>
+
+
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://github.com/karisazi" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
+								<li><a href="https://karisazi.github.io" class="icon solid style2 fa-globe"><span class="label">Website</span></a></li>
+								<li><a href="https://instagram.com/karisazihni" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://www.linkedin.com/in/karisa02/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="mailto:karisazihnil@gmail.com" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+							<p>&copy; 2025 Karisa Zihni Lutfiana.</p>
+
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+			<script src="app.js"></script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+	</body>
+</html>
