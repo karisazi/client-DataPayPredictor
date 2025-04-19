@@ -24,7 +24,9 @@ function onClickedEstimateSalary() {
 
     // var url = "http://127.0.0.1:8000/predict-dsjobs-salaries"; // if not using nginx
     // var url = "/api/predict-dsjobs-salaries";
-    var url = "https://web-production-57984.up.railway.app/predict-dsjobs-salaries"
+    // var url = "https://web-production-57984.up.railway.app/predict-dsjobs-salaries"
+    
+    var url = "https://datapay.pythonanywhere.com/predict-dsjobs-salaries"
 
     const jobTitleImages = {
         "Data Scientist": "images/job_thumbnails/ds.jpg",
@@ -103,11 +105,11 @@ $(document).ready(function () {
         });
     }
 
-    populateSelect("https://web-production-57984.up.railway.app/get_job_titles", "#uiJobTitle", "Job title");
-    populateSelect("https://web-production-57984.up.railway.app/get_company_locations", "#uicompanylocs", "Location", true);
-    populateSelect("https://web-production-57984.up.railway.app/get_currency", "#uicurrency", "Currency", true);
-    populateSelect("https://web-production-57984.up.railway.app/get_work_year", "#uiworkyear", "Work year");
-    populateSelect("https://web-production-57984.up.railway.app/get_employee_residence", "#uiempresidence", "Residence");
+    populateSelect('https://datapay.pythonanywhere.com/get_job_titles', "#uiJobTitle", "Job title");
+    populateSelect("https://datapay.pythonanywhere.com/get_company_locations", "#uicompanylocs", "Location", true);
+    populateSelect("https://datapay.pythonanywhere.com/get_currency", "#uicurrency", "Currency", true);
+    populateSelect("https://datapay.pythonanywhere.com/get_work_year", "#uiworkyear", "Work year");
+    populateSelect("https://datapay.pythonanywhere.com/get_employee_residence", "#uiempresidence", "Residence");
 
     // populateSelect("http://127.0.0.1:8000/get_job_titles", "#uiJobTitle", "Job title");
     // populateSelect("http://127.0.0.1:8000/get_company_locations", "#uicompanylocs", "Location", true);
